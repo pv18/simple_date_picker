@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {DatePicker} from './DatePicker';
+import './App.css'
 
 const App = () => {
-    return (
-        <div>
+    const [date, setDate] = useState(() => new Date());
 
-        </div>
+    return (
+        <>
+            <DatePicker value={date} onChange={setDate}/>
+        </>
     );
 };
 
