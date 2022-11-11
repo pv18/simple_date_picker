@@ -7,6 +7,7 @@ const App = () => {
 
     return (
         <>
+            <div></div>
             <DatePicker value={date} onChange={setDate}/>
         </>
     );
